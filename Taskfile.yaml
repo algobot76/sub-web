@@ -1,0 +1,8 @@
+version: "3"
+
+tasks:
+  docker:build:
+    cmds:
+      - docker build -t subweb:latest .
+      - docker tag subweb:latest algobot76/subweb:latest
+      - docker push algobot76/subweb:latest
